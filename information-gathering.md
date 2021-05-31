@@ -15,6 +15,7 @@ sublist3r
 OWASP Amass
 
 **Web Technologies**  
-[**https://builtwith.com/**](https://builtwith.com/) ****  
+[**https://builtwith.com/**](https://builtwith.com/)   
+****[**https://www.wappalyzer.com/**](https://www.wappalyzer.com/)  
 
 
