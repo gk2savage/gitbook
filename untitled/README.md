@@ -28,6 +28,13 @@ Subnetting
 [https://www.youtube.com/watch?v=ZxAwQB8TZsM](https://www.youtube.com/watch?v=ZxAwQB8TZsM)  
 [https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view](https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view)
 
+### Information Gathering
+
+Email Gathering : [https://hunter.io](https://hunter.io)  
+Find Breached Passwords : pastebin, ghostbin, haveibeenpwned, Breachparse, Advanced Search, RF  
+OSINT : [https://osintframework.com/](https://osintframework.com/)  
+Usernames : [https://github.com/sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)  
+Rev Image Search : Yandex, Bing, Google  
 
 
 
