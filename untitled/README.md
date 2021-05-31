@@ -26,6 +26,10 @@ Mac Address - [https://en.wikipedia.org/wiki/MAC\_address](https://en.wikipedia.
 
 OSI Model - [https://www.geeksforgeeks.org/layers-of-osi-model/](https://www.geeksforgeeks.org/layers-of-osi-model/)
 
+Subnetting   
+[https://www.youtube.com/watch?v=ZxAwQB8TZsM](https://www.youtube.com/watch?v=ZxAwQB8TZsM)  
+[https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view](https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view)
+
 
 
 
