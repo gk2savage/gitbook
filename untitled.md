@@ -1,4 +1,4 @@
-# Basic Setup
+# Basics
 
 ### NOTE KEEPING
 
@@ -13,6 +13,8 @@ FlameShot: [https://github.com/lupoDharkael/flameshot](https://github.com/lupoDh
 OneNote: [https://products.office.com/en-us/onenote/digital-note-taking-app?rtc=1](https://products.office.com/en-us/onenote/digital-note-taking-app?rtc=1)
 
 Joplin: [https://github.com/laurent22/joplin](https://github.com/laurent22/joplin)
+
+### Networking Basics
 
 
 
