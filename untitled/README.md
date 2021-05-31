@@ -18,8 +18,6 @@ Joplin: [https://github.com/laurent22/joplin](https://github.com/laurent22/jopli
 
 IPv4 / IPv6 - [https://en.wikipedia.org/wiki/IP\_address](https://en.wikipedia.org/wiki/IP_address)
 
-
-
 {% embed url="https://www.ripe.net/about-us/press-centre/understanding-ip-addressing" %}
 
 Mac Address - [https://en.wikipedia.org/wiki/MAC\_address](https://en.wikipedia.org/wiki/MAC_address)
