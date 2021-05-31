@@ -23,7 +23,9 @@ whatweb
 
 ![whatweb output](.gitbook/assets/image.png)
 
-
-
-
+**Google Advanced Search:**  
+site:tesla.com  
+site:tesla.com -www  
+filetype:pdf  
+intitle:tesla
 
