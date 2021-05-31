@@ -16,5 +16,17 @@ Joplin: [https://github.com/laurent22/joplin](https://github.com/laurent22/jopli
 
 ### Networking Basics
 
+IPv4 / IPv6 - [https://en.wikipedia.org/wiki/IP\_address](https://en.wikipedia.org/wiki/IP_address)
+
+
+
+{% embed url="https://www.ripe.net/about-us/press-centre/understanding-ip-addressing" %}
+
+Mac Address - [https://en.wikipedia.org/wiki/MAC\_address](https://en.wikipedia.org/wiki/MAC_address)
+
+OSI Model - [https://www.geeksforgeeks.org/layers-of-osi-model/](https://www.geeksforgeeks.org/layers-of-osi-model/)
+
+
+
 
 
