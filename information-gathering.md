@@ -17,6 +17,8 @@ OWASP Amass
 **Web Technologies**  
 [**https://builtwith.com/**](https://builtwith.com/)   
 ****[**https://www.wappalyzer.com/**](https://www.wappalyzer.com/) ****and Widget  
+BurpSuite  
+OWASP ZAP  
 whatweb
 
 ![whatweb output](.gitbook/assets/image.png)
