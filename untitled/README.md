@@ -35,6 +35,12 @@ Find Breached Passwords : pastebin, ghostbin, haveibeenpwned, Breachparse, Advan
 OSINT : [https://osintframework.com/](https://osintframework.com/)  
 Usernames : [https://github.com/sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)  
 Rev Image Search : Yandex, Bing, Google  
+  
+**Tools**  
+theHarvester  
+`theHarvester -d tesla.com -l 500 -b google`
+
+   
 
 
 
