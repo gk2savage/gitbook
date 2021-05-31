@@ -1,9 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Basics](untitled.md)
-
-## s
-
-* [Untitled](s/untitled.md)
+* [Basics](untitled/README.md)
+  * [Untitled](untitled/untitled-1.md)
 
