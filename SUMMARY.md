@@ -10,5 +10,5 @@
   * [Reverse Shells](pentesting/reverse-shells.md)
   * [Buf Overflow](pentesting/buf-overflow.md)
   * [Linux Privesc](pentesting/linux-privesc.md)
-* [Untitled](untitled-1.md)
+  * [Linux CLI](pentesting/linux-cli.md)
 
