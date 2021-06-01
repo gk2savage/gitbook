@@ -8,4 +8,5 @@
   * [HTTP and HTTPS](pentesting/http-and-https.md)
   * [SMB](pentesting/smb.md)
   * [Reverse Shells](pentesting/reverse-shells.md)
+  * [Buf Overflow](pentesting/buf-overflow.md)
 
