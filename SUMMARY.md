@@ -11,5 +11,6 @@
   * [Buf Overflow](pentesting/buf-overflow.md)
   * [Linux Privesc](pentesting/linux-privesc.md)
   * [Linux CLI](pentesting/linux-cli.md)
-* [Active Directory](active-directory.md)
+* [Active Directory](active-directory/README.md)
+  * [Attack Vectors](active-directory/attack-vectors.md)
 
