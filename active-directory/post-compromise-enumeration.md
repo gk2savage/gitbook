@@ -12,5 +12,5 @@
 
 `apt install bloodhound`
 
-
+setup neo4j console and open it in browser to access.
 
