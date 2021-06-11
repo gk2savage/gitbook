@@ -13,4 +13,5 @@
   * [Linux CLI](pentesting/linux-cli.md)
 * [Active Directory](active-directory/README.md)
   * [Attack Vectors](active-directory/attack-vectors.md)
+  * [Post Compromise Enumeration](active-directory/post-compromise-enumeration.md)
 
