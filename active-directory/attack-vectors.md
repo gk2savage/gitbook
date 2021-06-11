@@ -4,23 +4,27 @@
 
 ### LLMNR Poisoning
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 {% embed url="https://www.4armed.com/blog/llmnr-nbtns-poisoning-using-responder/" %}
 
 Basically we are mitm and wait for someone in the domain to access non-existing domain which will lead to sending a broadcast request through which we capture the hash and then maybe crack it to get access.
 
-![](../.gitbook/assets/image%20%2817%29.png)
-
-![](../.gitbook/assets/image%20%2818%29.png)
-
 ![](../.gitbook/assets/image%20%2819%29.png)
+
+![](../.gitbook/assets/image%20%2820%29.png)
+
+![](../.gitbook/assets/image%20%2821%29.png)
 
 `hashcat -m 5600 ntlmhash wordlist //5600 - NetNTLMv2`
 
 ### SMB Relay
 
+![](../.gitbook/assets/image%20%2816%29.png)
+
+We change configs in responder.conf, run the responder again with the same command and setup relay with ntlmrelayx.py
+
 ![](../.gitbook/assets/image%20%2815%29.png)
 
-
+![](../.gitbook/assets/image%20%2818%29.png)
 
