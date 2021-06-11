@@ -12,9 +12,9 @@ Basically we are mitm and wait for someone in the domain to access non-existing 
 
 ![](../.gitbook/assets/image%20%2820%29.png)
 
-![](../.gitbook/assets/image%20%2823%29.png)
-
 ![](../.gitbook/assets/image%20%2824%29.png)
+
+![](../.gitbook/assets/image%20%2825%29.png)
 
 `hashcat -m 5600 ntlmhash wordlist //5600 - NetNTLMv2`
 
@@ -31,7 +31,7 @@ We change configs in responder.conf, run the responder again with the same comma
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
-![](../.gitbook/assets/image%20%2822%29.png)
+![](../.gitbook/assets/image%20%2823%29.png)
 
 Getting Shell with credentials using psexec  
 `psexec.py marvel.local/fcastle:password1@192.168.1.12`
@@ -48,4 +48,6 @@ is enabled, we can run LDAP or LDAPS to attack
 ![](../.gitbook/assets/image%20%2817%29.png)
 
 ![](../.gitbook/assets/image%20%2821%29.png)
+
+![](../.gitbook/assets/image%20%2822%29.png)
 
