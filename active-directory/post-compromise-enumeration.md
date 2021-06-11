@@ -6,7 +6,7 @@
 
 {% embed url="https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993" %}
 
-![](../.gitbook/assets/image%20%2827%29.png)
+![](../.gitbook/assets/image%20%2828%29.png)
 
 ### BLOODHOUND
 
@@ -16,5 +16,5 @@ setup neo4j console and open it in browser to access.
 
 {% embed url="https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1" %}
 
-
+![](../.gitbook/assets/image%20%2816%29.png)
 
