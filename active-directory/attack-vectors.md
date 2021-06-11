@@ -40,5 +40,8 @@ Getting Shell with credentials using psexec
 
 {% embed url="https://github.com/fox-it/mitm6" %}
 
+Feature like Active Directory Certificate Services can make the attack more powerful. If a AD CS certificate   
+is enabled, we can run LDAP or LDAPS to attack
+
 
 
