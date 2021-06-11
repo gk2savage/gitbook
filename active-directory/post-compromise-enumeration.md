@@ -10,5 +10,7 @@
 
 ### BLOODHOUND
 
+`apt install bloodhound`
+
 
 
