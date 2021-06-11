@@ -14,3 +14,7 @@
 
 setup neo4j console and open it in browser to access.
 
+{% embed url="https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1" %}
+
+
+
