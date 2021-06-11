@@ -12,9 +12,9 @@ Basically we are mitm and wait for someone in the domain to access non-existing 
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
-![](../.gitbook/assets/image%20%2820%29.png)
-
 ![](../.gitbook/assets/image%20%2821%29.png)
+
+![](../.gitbook/assets/image%20%2822%29.png)
 
 `hashcat -m 5600 ntlmhash wordlist //5600 - NetNTLMv2`
 
@@ -27,4 +27,6 @@ We change configs in responder.conf, run the responder again with the same comma
 ![](../.gitbook/assets/image%20%2815%29.png)
 
 ![](../.gitbook/assets/image%20%2818%29.png)
+
+![](../.gitbook/assets/image%20%2820%29.png)
 
