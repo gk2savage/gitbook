@@ -6,5 +6,7 @@
 
 ![](../.gitbook/assets/image%20%2815%29.png)
 
+{% embed url="https://www.4armed.com/blog/llmnr-nbtns-poisoning-using-responder/" %}
+
 
 
