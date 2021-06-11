@@ -25,7 +25,7 @@ Basically we are mitm and wait for someone in the domain to access non-existing 
 We search for devices in domain with smb signing disabled. for example with nse script in nmap for smb  
 [https://nmap.org/nsedoc/scripts/smb2-security-mode.html](https://nmap.org/nsedoc/scripts/smb2-security-mode.html)
 
-We change configs in responder.conf, run the responder again with the same command and setup relay with ntlmrelayx.py. Same as LLMNR poisoning but we use the hash to relay it to smb service and get access.
+We change configs in responder.conf, run the responder again with the same command and setup relay with ntlmrelayx.py. Same as LLMNR poisoning but we use the hash to relay it to smb service and get access. In ntmlrelayx.py, we can use -i to get interactive smb shell.
 
 ![](../.gitbook/assets/image%20%2815%29.png)
 
