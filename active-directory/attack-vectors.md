@@ -16,7 +16,7 @@ Basically we are mitm and wait for someone in the domain to access non-existing 
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-`hashcat -m 5600 ntlmhash wordlist //5600 - netNTLM v2`
+`hashcat -m 5600 ntlmhash wordlist //5600 - NetNTLMv2`
 
 
 
