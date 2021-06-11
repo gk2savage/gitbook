@@ -22,7 +22,7 @@ Basically we are mitm and wait for someone in the domain to access non-existing 
 
 ![](../.gitbook/assets/image%20%2816%29.png)
 
-We change configs in responder.conf, run the responder again with the same command and setup relay with ntlmrelayx.py
+We change configs in responder.conf, run the responder again with the same command and setup relay with ntlmrelayx.py. Same as LLMNR poisoning but we use the hash to relay it to smb service and get access.
 
 ![](../.gitbook/assets/image%20%2815%29.png)
 
