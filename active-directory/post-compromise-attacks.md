@@ -36,3 +36,9 @@ We can dump hashes with secretsdump.py and crack with Hashcat.
 
 ![](../.gitbook/assets/image%20%2839%29.png)
 
+### Golden Ticket Attack
+
+{% embed url="https://www.qomplx.com/qomplx-knowledge-golden-ticket-attacks-explained/" %}
+
+
+
