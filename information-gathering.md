@@ -14,6 +14,10 @@ sublist3r
 [https://crt.sh/](https://crt.sh/) Hunt subdomains with certificate search  
 OWASP Amass
 
+{% embed url="https://github.com/tomnomnom/assetfinder" %}
+
+
+
 **Web Technologies**  
 [**https://builtwith.com/**](https://builtwith.com/)   
 ****[**https://www.wappalyzer.com/**](https://www.wappalyzer.com/) ****and Widget  
@@ -27,5 +31,6 @@ whatweb
 site:tesla.com  
 site:tesla.com -www  
 filetype:pdf  
-intitle:tesla
+intitle:tesla  
+
 
