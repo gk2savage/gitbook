@@ -30,5 +30,9 @@ We can dump hashes with secretsdump.py and crack with Hashcat.
 
 {% embed url="https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/" %}
 
+### Mimikatz
 
+{% embed url="https://github.com/gentilkiwi/mimikatz" %}
+
+![](../.gitbook/assets/image%20%2839%29.png)
 
