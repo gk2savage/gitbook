@@ -24,3 +24,7 @@ We can dump hashes with secretsdump.py and crack with Hashcat.
 
 ![](../.gitbook/assets/image%20%2832%29.png)
 
+### GPP / cPasswords Attacks \(Group Policy Preferences\)
+
+
+
