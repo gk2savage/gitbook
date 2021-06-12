@@ -2,9 +2,9 @@
 
 ### Pass the Hash / Password <a id="lecture_heading"></a>
 
-![](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
-![Pass the Hash](../.gitbook/assets/image%20%2832%29.png)
+![Pass the Hash](../.gitbook/assets/image%20%2833%29.png)
 
 We can dump hashes with secretsdump.py and crack with Hashcat.
 
@@ -14,11 +14,13 @@ We can dump hashes with secretsdump.py and crack with Hashcat.
 
 ![](../.gitbook/assets/image%20%2831%29.png)
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 
-![](../.gitbook/assets/image%20%2836%29.png)
+![](../.gitbook/assets/image%20%2837%29.png)
 
 ### Kerberoasting <a id="lecture_heading"></a>
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](../.gitbook/assets/image%20%2834%29.png)
+
+![](../.gitbook/assets/image%20%2832%29.png)
 
