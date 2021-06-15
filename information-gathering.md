@@ -1,10 +1,4 @@
----
-description: >-
-  Information Gathering is the act of gathering different kinds of information
-  against the targeted victim or system
----
-
-# Information Gathering \| OSINT
+# Information Gathering
 
 Email Gathering : [https://hunter.io](https://hunter.io)  
 Find Breached Passwords : pastebin, ghostbin, haveibeenpwned, Breachparse, Advanced Search, RF  
@@ -24,14 +18,14 @@ OWASP Amass
 
 {% embed url="https://github.com/tomnomnom/httprobe" %}
 
+
+
 **Web Technologies**  
 [**https://builtwith.com/**](https://builtwith.com/)   
 ****[**https://www.wappalyzer.com/**](https://www.wappalyzer.com/) ****and Widget  
-OWASP ZAP
-
-{% embed url="https://portswigger.net/burp" %}
-
-**WHATWEB**
+BurpSuite  
+OWASP ZAP  
+whatweb
 
 ![](.gitbook/assets/image%20%281%29.png)
 
@@ -39,9 +33,6 @@ OWASP ZAP
 site:tesla.com  
 site:tesla.com -www  
 filetype:pdf  
-intitle:tesla
+intitle:tesla  
 
-{% embed url="https://sector035.nl/articles/keeping-a-grip-on-google-ids" %}
-
-{% embed url="https://wigle.net/" %}
 
