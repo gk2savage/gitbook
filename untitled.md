@@ -1,7 +1,3 @@
----
-description: Basic Fundamentals of Networking and Pentesting
----
-
 # Basics
 
 ### NOTE KEEPING
@@ -32,20 +28,7 @@ Subnetting
 [https://www.youtube.com/watch?v=ZxAwQB8TZsM](https://www.youtube.com/watch?v=ZxAwQB8TZsM)  
 [https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view](https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view)
 
-{% embed url="https://www.ibm.com/cloud/learn/networking-a-complete-guide" %}
-
-| Pentesting Methodology |
-| :--- |
-| **1. Reconn­ais­sance** |
-| **2. Scanning \| Enumeration** |
-| **3. Vulner­ability Assessment** |
-| **4. Gaining Access \| Exploi­tation** |
-| **5. Mainta­ining Access \| Post exploi­tation** |
-| **6. Cleanup and Removing Evidence** |
-| **7 Reporting**  |
-
-  
-
+###  
 
 
 
