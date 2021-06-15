@@ -51,7 +51,9 @@ Pivoting is the exclusive method of using an instance also known by â€˜footholdâ
 
 ## SSH Port Forwarding 
 
-Example - `ssh -L 8000:127.0.0.1:8000 roy@10.10.10.212`
+```text
+ssh -L 8000:127.0.0.1:8000 roy@10.10.10.212
+```
 
 * We can port forward or you can say ssh tunnel a port and forward it on your localhost 
 * So the 8000 port running on machine 10.10.10.212 will be forwarded to run on your localhost at localhost:8000
