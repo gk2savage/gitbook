@@ -28,6 +28,8 @@ Subnetting
 [https://www.youtube.com/watch?v=ZxAwQB8TZsM](https://www.youtube.com/watch?v=ZxAwQB8TZsM)  
 [https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view](https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view)
 
+{% embed url="https://www.ibm.com/cloud/learn/networking-a-complete-guide" %}
+
 | Pentesting Methodology |
 | :--- |
 | **1. Reconn­ais­sance** |
@@ -38,7 +40,8 @@ Subnetting
 | **6. Cleanup and Removing Evidence** |
 | **7 Reporting**  |
 
-###  
+  
+
 
 
 
