@@ -1,3 +1,7 @@
+---
+description: Basic Fundamentals of Networking and Pentesting
+---
+
 # Basics
 
 ### NOTE KEEPING
