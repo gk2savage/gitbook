@@ -1,4 +1,10 @@
-# Information Gathering
+---
+description: >-
+  Information Gathering is the act of gathering different kinds of information
+  against the targeted victim or system
+---
+
+# Information Gathering \| OSINT
 
 Email Gathering : [https://hunter.io](https://hunter.io)  
 Find Breached Passwords : pastebin, ghostbin, haveibeenpwned, Breachparse, Advanced Search, RF  
