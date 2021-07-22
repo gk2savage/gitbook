@@ -12,6 +12,7 @@
   * [Linux Privilege Escalation](pentesting/linux-privesc.md)
   * [Miscellaneous](pentesting/linux-cli.md)
 * [Active Directory](active-directory/README.md)
+  * [AD Extras](active-directory/ad-extras.md)
   * [Attack Vectors](active-directory/attack-vectors.md)
   * [Post Compromise Enumeration](active-directory/post-compromise-enumeration.md)
   * [Post Compromise Attacks](active-directory/post-compromise-attacks.md)
