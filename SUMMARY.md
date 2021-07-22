@@ -10,7 +10,7 @@
   * [Reverse Shells](pentesting/reverse-shells.md)
   * [Buffer Overflow \| Buf Exploitation](pentesting/buf-overflow.md)
   * [Linux Privilege Escalation](pentesting/linux-privesc.md)
-  * [Linux CLI](pentesting/linux-cli.md)
+  * [Miscellaneous](pentesting/linux-cli.md)
 * [Active Directory](active-directory/README.md)
   * [Attack Vectors](active-directory/attack-vectors.md)
   * [Post Compromise Enumeration](active-directory/post-compromise-enumeration.md)
