@@ -32,5 +32,7 @@ Then run the reverse.exe executable on Windows and catch the shell:
 
 `C:\PrivEsc\reverse.exe`
 
+![](.gitbook/assets/image%20%2840%29.png)
+
 
 
