@@ -4,7 +4,6 @@
 * [Basics](untitled.md)
 * [Information Gathering \| OSINT](information-gathering.md)
 * [Penetration Testing](pentesting/README.md)
-  * [Untitled](pentesting/untitled.md)
   * [Scanning and Enumeration](pentesting/scanning-and-enumeration.md)
   * [HTTP and HTTPS](pentesting/http-and-https.md)
   * [SMB \| Windows Domain Enumeration](pentesting/smb.md)
