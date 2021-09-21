@@ -18,4 +18,5 @@
   * [Post Compromise Attacks](active-directory/post-compromise-attacks.md)
 * [Pivoting](pivoting.md)
 * [Windows Privesc](windows-privesc.md)
+* [Vulnhub Machines / Proving Grounds](vulnhub-machines-proving-grounds.md)
 
