@@ -8,6 +8,7 @@
   * [HTTP and HTTPS](pentesting/http-and-https.md)
   * [SMB | Windows Domain Enumeration](pentesting/smb.md)
   * [NFS](pentesting/nfs.md)
+  * [SMTP](pentesting/smtp.md)
   * [Reverse Shells](pentesting/reverse-shells.md)
   * [Buffer Overflow | Buf Exploitation](pentesting/buf-overflow.md)
   * [Linux Privilege Escalation](pentesting/linux-privesc.md)
