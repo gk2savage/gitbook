@@ -27,7 +27,13 @@ ROOT : sudo time /bin/bash
 
 
 
+## Dawn
 
+USER : smbclient //192.168.178.11/ITDEPT\
+Management.log in :80/logs shows web-control running as root.\
+uploaded python shell in smb ITDEPT share with name 'web-control'\
+Got reverse shell with cron.\
+ROOT : checking for SUID BITS, found `/usr/bin/zsh -> euid=0`
 
 
 
