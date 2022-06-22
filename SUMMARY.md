@@ -21,3 +21,4 @@
 * [Pivoting](pivoting.md)
 * [Windows Privesc](windows-privesc.md)
 * [Vulnhub Machines / Proving Grounds](vulnhub-machines-proving-grounds.md)
+* [log4j](log4j.md)
