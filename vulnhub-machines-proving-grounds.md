@@ -37,3 +37,8 @@ ROOT : checking for SUID BITS, found `/usr/bin/zsh -> euid=0`
 
 
 
+### **Machine Categories**
+
+#### **SSTI**
+
+HTB - Late (Image to Text Application built with Flask)
