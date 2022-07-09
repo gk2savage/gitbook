@@ -38,6 +38,18 @@ Tools for Routing are:
   * IP tables is the way to port forward&#x20;
 * Route command / Static Routing
 
+### Enumeration
+
+There are five possible ways to enumerate a network through a compromised host:
+
+1. Using material found on the machine. The hosts file or ARP cache, for example
+2. Using pre-installed tools
+3. Using statically compiled tools
+4. Using scripting techniques
+5. Using local tools through a proxy
+
+Before anything else though, it's sensible to check to see if there are any pieces of useful information stored on the target. `arp -a` can be used to Windows or Linux to check the ARP cache of the machine -- this will show you any IP addresses of hosts that the target has interacted with recently. Equally, static mappings may be found in `/etc/hosts` on Linux, or `C:\Windows\System32\drivers\etc\hosts` on Windows. `/etc/resolv.conf` on Linux may also identify any local DNS servers, which may be misconfigured to allow something like a DNS zone transfer attack (which is outwith the scope of this content, but worth looking into). On Windows the easiest way to check the DNS servers for an interface is with `ipconfig /all`. Linux has an equivalent command as an alternative to reading the resolv.conf file: `nmcli dev show`.
+
 ### Using route
 
 #### Syntax : `route`
@@ -78,17 +90,10 @@ ssh -L 8000:172.16.0.10:80 user@172.16.0.5 -fN
 
 The `-fN` combined switch does two things: `-f` backgrounds the shell immediately so that we have our own terminal back. `-N` tells SSH that it doesn't need to execute any commands -- only set up the connection.
 
-### Enumeration
-
-There are five possible ways to enumerate a network through a compromised host:
-
-1. Using material found on the machine. The hosts file or ARP cache, for example
-2. Using pre-installed tools
-3. Using statically compiled tools
-4. Using scripting techniques
-5. Using local tools through a proxy
-
-Before anything else though, it's sensible to check to see if there are any pieces of useful information stored on the target. `arp -a` can be used to Windows or Linux to check the ARP cache of the machine -- this will show you any IP addresses of hosts that the target has interacted with recently. Equally, static mappings may be found in `/etc/hosts` on Linux, or `C:\Windows\System32\drivers\etc\hosts` on Windows. `/etc/resolv.conf` on Linux may also identify any local DNS servers, which may be misconfigured to allow something like a DNS zone transfer attack (which is outwith the scope of this content, but worth looking into). On Windows the easiest way to check the DNS servers for an interface is with `ipconfig /all`. Linux has an equivalent command as an alternative to reading the resolv.conf file: `nmcli dev show`.
+###
 
 
 
+References:
+
+{% embed url="https://tryhackme.com/room/wreath" %}
