@@ -72,5 +72,15 @@ ssh -L 8000:127.0.0.1:8000 roy@10.10.10.212
 * We can port forward or you can say ssh tunnel a port and forward it on your localhost&#x20;
 * So the 8000 port running on machine 10.10.10.212 will be forwarded to run on your localhost at localhost:8000
 
+### Enumeration
 
+There are five possible ways to enumerate a network through a compromised host:
+
+1. Using material found on the machine. The hosts file or ARP cache, for example
+2. Using pre-installed tools
+3. Using statically compiled tools
+4. Using scripting techniques
+5. Using local tools through a proxy
+
+Before anything else though, it's sensible to check to see if there are any pieces of useful information stored on the target. `arp -a` can be used to Windows or Linux to check the ARP cache of the machine -- this will show you any IP addresses of hosts that the target has interacted with recently. Equally, static mappings may be found in `/etc/hosts` on Linux, or `C:\Windows\System32\drivers\etc\hosts` on Windows. `/etc/resolv.conf` on Linux may also identify any local DNS servers, which may be misconfigured to allow something like a DNS zone transfer attack (which is outwith the scope of this content, but worth looking into). On Windows the easiest way to check the DNS servers for an interface is with `ipconfig /all`. Linux has an equivalent command as an alternative to reading the resolv.conf file: `nmcli dev show`.
 
