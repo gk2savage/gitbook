@@ -4,7 +4,15 @@
 
 ```
 xfreerdp /u:user /p:password321 /cert:ignore /v:10.10.34.38
+xfreerdp /v:IP /u:USERNAME /p:PASSWORD +clipboard /dynamic-resolution /drive:/usr/share/windows-resources,share
 ```
+
+### Xfreerdp
+
+* `/dynamic-resolution` -- allows us to resize the window, adjusting the resolution of the target in the process
+* `/size:WIDTHxHEIGHT` -- sets a specific size for targets that don't resize automatically with `/dynamic-resolution`
+* `+clipboard` -- enables clipboard support
+* `/drive:LOCAL_DIRECTORY,SHARE_NAME` -- creates a shared drive between the attacking machine and the target. This switch is insanely useful as it allows us to very easily use our toolkit on the remote target, and save any outputs back directly to our own hard drive. In essence, this means that we never actually have to create any files on the target. For example, to share the current directory in a share called `share`, you could use: `/drive:.,share`, with the period (`.`) referring to the current directory
 
 ### Connecting with winexe or pth-winexe
 
