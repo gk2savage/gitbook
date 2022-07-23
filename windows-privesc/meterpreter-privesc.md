@@ -71,3 +71,4 @@ meterpreter > impersonate_token "BUILTIN\Administrators"
 
 ![](<../.gitbook/assets/image (45).png>)
 
+Even though you have a higher privileged token you may not actually have the permissions of a privileged user (this is due to the way Windows handles permissions - it uses the Primary Token of the process and not the impersonated token to determine what the process can or cannot do). Ensure that you migrate to a process with correct permissions (above questions answer). The safest process to pick is the services.exe process. First use the _ps_ command to view processes and find the PID of the services.exe process. Migrate to this process using the command _migrate PID-OF-PROCESS._
