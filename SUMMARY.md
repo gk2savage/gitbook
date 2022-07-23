@@ -21,5 +21,6 @@
 * [Pivoting](pivoting.md)
 * [Windows Privesc](windows-privesc/README.md)
   * [Window Tools/Resources](windows-privesc/window-tools-resources.md)
+  * [Meterpreter Privesc](windows-privesc/meterpreter-privesc.md)
 * [Vulnhub Machines / Proving Grounds](vulnhub-machines-proving-grounds.md)
 * [log4j](log4j.md)
