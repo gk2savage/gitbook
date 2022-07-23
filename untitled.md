@@ -6,7 +6,7 @@ description: Basic Fundamentals of Networking and Pentesting
 
 ### NOTE KEEPING
 
-KeepNote: [http://keepnote.org/](http://keepnote.org)
+KeepNote: [http://keepnote.org/](http://keepnote.org/)
 
 CheryTree: [https://www.giuspen.com/cherrytree/](https://www.giuspen.com/cherrytree/)
 

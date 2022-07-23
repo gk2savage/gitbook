@@ -19,6 +19,7 @@
   * [Post Compromise Enumeration](active-directory/post-compromise-enumeration.md)
   * [Post Compromise Attacks](active-directory/post-compromise-attacks.md)
 * [Pivoting](pivoting.md)
-* [Windows Privesc](windows-privesc.md)
+* [Windows Privesc](windows-privesc/README.md)
+  * [Window Tools/Resources](windows-privesc/window-tools-resources.md)
 * [Vulnhub Machines / Proving Grounds](vulnhub-machines-proving-grounds.md)
 * [log4j](log4j.md)
