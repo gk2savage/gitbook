@@ -33,7 +33,7 @@ OWASP ZAP
 
 **WHATWEB**
 
-![](.gitbook/assets/image.png)
+![](<.gitbook/assets/image (3).png>)
 
 **Google Advanced Search:**\
 site:tesla.com\

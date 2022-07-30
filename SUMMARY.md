@@ -24,3 +24,4 @@
   * [Meterpreter Privesc](windows-privesc/meterpreter-privesc.md)
 * [Vulnhub Machines / Proving Grounds](vulnhub-machines-proving-grounds.md)
 * [log4j](log4j.md)
+* [Linux Forensics Cheatsheet](linux-forensics-cheatsheet.md)
