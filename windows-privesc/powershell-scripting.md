@@ -134,3 +134,21 @@ Base 64 Decode
 certutil -decode "C:\Users\Administrator\Desktop\b64.txt" decode.txt
 ```
 
+Local users in System
+
+```
+Get-LocalUser
+```
+
+IP Address Info
+
+```
+Get-NetIPAddress
+GEt-NetTCPConnection 
+```
+
+Find API\_KEY in strings
+
+```
+Get-ChildItem C:\* -Recurse | Select-String -pattern API_KEY
+```
