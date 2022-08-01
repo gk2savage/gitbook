@@ -13,3 +13,5 @@ Common verbs to use include:
 * Write
 * New
 * Out
+
+{% embed url="https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7" %}
