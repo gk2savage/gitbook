@@ -107,3 +107,30 @@ The format of the command would be
 Here's an example of sort the list of directories:
 
 ![](https://i.imgur.com/xob5cqe.png)
+
+### Powershell Commands
+
+Recursively Locate File
+
+```
+Get-ChildItem -Path C:\ -Include *file.txt* -File -Recurse -ErrorAction SilentlyContinue
+```
+
+Get-Content
+
+```
+Get-Content "C:\Program Files\interesting-file.txt"
+```
+
+MD5 Hash
+
+```
+Get-FileHash -Path "C:\Program Files\interesting-file.txt" -Algorithm MD5
+```
+
+Base 64 Decode
+
+```
+certutil -decode "C:\Users\Administrator\Desktop\b64.txt" decode.txt
+```
+
