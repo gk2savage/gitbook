@@ -147,6 +147,12 @@ Get-NetIPAddress
 GEt-NetTCPConnection 
 ```
 
+Get Processes
+
+```
+Get-Process
+```
+
 Find API\_KEY in strings
 
 ```
