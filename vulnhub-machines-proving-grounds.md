@@ -46,3 +46,5 @@ HTB - Late (Image to Text Application built with Flask)
 ### Important Machines Writeups
 
 {% embed url="https://n1ck3nd.gitbook.io/ctf-write-ups/vulnnet#receiving-a-shell" %}
+
+Execute sandboxed Lua scripts through the “EVAL” command using _dofile(), Capturing_ NTLM hash via responder by connecting with //tun0-ip//share, Powerview and sharpHound, BloodHound for enumeration and Abusing GPO Permission via SharpGPOAbuse.exe
