@@ -24,5 +24,5 @@
   * [Meterpreter Privesc](windows-privesc/meterpreter-privesc.md)
   * [Powershell Scripting](windows-privesc/powershell-scripting.md)
 * [Vulnhub/ PG/ THM/ HTB](vulnhub-machines-proving-grounds.md)
-* [log4j](log4j.md)
+* [Apache Log4j](apache-log4j.md)
 * [Linux Forensics Cheatsheet](linux-forensics-cheatsheet.md)

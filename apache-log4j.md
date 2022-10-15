@@ -1,8 +1,8 @@
 ---
-description: Apache Java logging framework
+description: Exploiting Apache Java logging framework
 ---
 
-# log4j
+# Apache Log4j
 
 ### CVE-2021-44228
 
