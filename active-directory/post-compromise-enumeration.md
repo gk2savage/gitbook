@@ -13,7 +13,7 @@
 {% embed url="https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1" %}
 
 <pre><code><strong>PS>
-</strong><strong>Import-Module C:\Enterprise-Share\sharphound.ps
+</strong><strong>Import-Module C:\Enterprise-Share\sharphound.ps1
 </strong>Invoke-BloodHound -CollectionMethod All
 
 ie. a zip will be created that we can import in Bloodhound in below format:
