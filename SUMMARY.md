@@ -23,6 +23,6 @@
   * [Window Tools/Resources](windows-privesc/window-tools-resources.md)
   * [Meterpreter Privesc](windows-privesc/meterpreter-privesc.md)
   * [Powershell Scripting](windows-privesc/powershell-scripting.md)
-* [Vulnhub Machines / Proving Grounds](vulnhub-machines-proving-grounds.md)
+* [Vulnhub/ PG/ THM/ HTB](vulnhub-machines-proving-grounds.md)
 * [log4j](log4j.md)
 * [Linux Forensics Cheatsheet](linux-forensics-cheatsheet.md)

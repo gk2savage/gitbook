@@ -1,8 +1,8 @@
 ---
-description: Quick Writeups for Vulnhub/ PG Machines
+description: Quick Writeups for Vulnhub/ PG Machines/ THM/ HTB
 ---
 
-# Vulnhub Machines / Proving Grounds
+# Vulnhub/ PG/ THM/ HTB
 
 ## Infosec Prep
 
@@ -42,3 +42,7 @@ ROOT : checking for SUID BITS, found `/usr/bin/zsh -> euid=0`
 #### **SSTI**
 
 HTB - Late (Image to Text Application built with Flask)
+
+### Important Machines Writeups
+
+{% embed url="https://n1ck3nd.gitbook.io/ctf-write-ups/vulnnet#receiving-a-shell" %}
