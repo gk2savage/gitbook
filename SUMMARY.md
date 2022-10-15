@@ -13,6 +13,7 @@
   * [Buffer Overflow | Buf Exploitation](pentesting/buf-overflow.md)
   * [Linux Privilege Escalation](pentesting/linux-privesc.md)
   * [Miscellaneous](pentesting/linux-cli.md)
+  * [Redis](pentesting/redis.md)
 * [Active Directory](active-directory/README.md)
   * [AD Extras](active-directory/ad-extras.md)
   * [Attack Vectors](active-directory/attack-vectors.md)
