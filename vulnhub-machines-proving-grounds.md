@@ -48,3 +48,9 @@ HTB - Late (Image to Text Application built with Flask)
 {% embed url="https://n1ck3nd.gitbook.io/ctf-write-ups/vulnnet#receiving-a-shell" %}
 
 Execute sandboxed Lua scripts through the “EVAL” command using _dofile(), Capturing_ NTLM hash via responder by connecting with //tun0-ip//share, Powerview and sharpHound, BloodHound for enumeration and Abusing GPO Permission via SharpGPOAbuse.exe
+
+
+
+{% embed url="https://tryhackme.com/room/vulnnetendgame" %}
+
+Enumerating subdomains and finding CMS "typo3", backend api call for SQLi, password cracking to get in typo3 panel, uploaded reverse shell, cracked user mozilla history to find credentials, getcap to find openssl binary to read and replace passwd file to get root.
