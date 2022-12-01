@@ -39,5 +39,3 @@ We’re all living in each other’s paranoia.
   [http://www.hackertest.net/](http://www.hackertest.net/)\
   [http://www.itsecgames.com/](http://www.itsecgames.com/)\
   [http://websec.fr/](http://websec.fr/)
-
-![](https://camo.githubusercontent.com/a75520936b038732159ec75ef7220b22086a74e862db5069c8d2df9ba3fd33fc/687474703a2f2f7777772e6861636b746865626f782e65752f62616467652f696d6167652f313732383631)
