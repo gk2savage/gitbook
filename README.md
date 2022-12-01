@@ -8,11 +8,9 @@ description: >-
 
 **Hello, These are my documentation for Penetration Tests Methodology, Security Research, Vulnerability Assessments, Notes and Cheat-sheets, CTF write-ups, Tools usage, CLI basics, useful repositories and Pentest Tactics with Guides.**
 
-{% embed url="https://github.com/gk2savage" %}
-
 ```
 ~ gk2savage@root 福 : cat quote.txt
-We’re all living in each other’s paranoia.
+The ultimate goal is to be an interesting, useful and wholesome person.
 ```
 
 #### 💊 Where to find me
