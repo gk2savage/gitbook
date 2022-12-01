@@ -37,5 +37,3 @@ The ultimate goal is to be an interesting, useful and wholesome person.
   [http://www.hackertest.net/](http://www.hackertest.net/)\
   [http://www.itsecgames.com/](http://www.itsecgames.com/)\
   [http://websec.fr/](http://websec.fr/)
-
-{% embed url="https://app.gitbook.com/s/-Mb1qWEo9hJOOrqtKQKZ/~/changes/WnWkZGSfZVaDkOTv6aMw/pentesting" %}
