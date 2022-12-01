@@ -8,10 +8,12 @@ description: >-
 
 **Hello, These are my documentation for Penetration Tests Methodology, Security Research, Vulnerability Assessments, Notes and Cheat-sheets, CTF write-ups, Tools usage, CLI basics, useful repositories and Pentest Tactics with Guides.**
 
-```
-~ gk2savage@root 福 : cat quote.txt
+<pre data-overflow="wrap"><code>~ girish@root 福 : cat info.txt
+<strong>My documentation about stuff related to Cybersecurity, and specifically penetration testing. Stuff I have come across that I want to remember or keep as reference. This is my way of trying to give something back to the infosec community and I hope it can be useful to someone.
+</strong>
+~ girish@root 福 : cat quote.txt
 The ultimate goal is to be an interesting, useful and wholesome person.
-```
+</code></pre>
 
 #### 💊 Where to find me
 
